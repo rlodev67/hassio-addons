@@ -1,7 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
-ARG BUILD_FROM
+ARG BUILD_FROM=ghcr.io/hassio-addons/base-python:eb04110
 FROM ${BUILD_FROM}
-ENV LANG C.UTF-8
 
 # Setup base
 RUN apk add --no-cache python3 py3-pip
